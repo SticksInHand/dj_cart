@@ -4,6 +4,7 @@ from django.db import models
 
 
 class Users(models.Model):
+    user_id = models.CharField(max_length=25)
     name = models.CharField(max_length=255)
     role_id = models.CharField(max_length=20)
     email = models.EmailField()
