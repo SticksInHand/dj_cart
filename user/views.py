@@ -9,6 +9,6 @@ def user(request, user_id):
         _post = Users.objects.get(user_id=user_id)
     except Users.doesNotExist:
         return Http404
-    
+
     return render(request, 'user.html', _post=_post)
 
